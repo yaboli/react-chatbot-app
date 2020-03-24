@@ -114,7 +114,7 @@ class Chat extends Component {
         const self = this;
         const { steps, uid } = this.props;
         const { userInput } = steps;
-        const url = "http://localhost:8080/api/messaging";
+        const url = "http://WatsonAssistantApi-env.eba-4xnkm33x.us-east-1.elasticbeanstalk.com/api/messaging";
         let requestBody = {
             "recipientId": uid,
             "text": userInput.value
