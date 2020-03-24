@@ -3,7 +3,7 @@ import 'firebase/auth'
 import 'firebase/firebase-firestore'
 
 const config = {
-    apiKey: "AIzaSyB15sX",
+    apiKey: "AIzaSyB15sXkL-p5Kbz7YLLhnkK774rf14QpZQ4",
     authDomain: "react-chatbot-76cfb.firebaseapp.com",
     databaseURL: "https://react-chatbot-76cfb.firebaseio.com",
     projectId: "react-chatbot-76cfb",
@@ -45,8 +45,8 @@ class Firebase {
         return this.auth.currentUser && this.auth.currentUser.displayName
     }
 
-    getCurrentUserEmail() {
-        return this.auth.currentUser && this.auth.currentUser.email
+    getCurrentUserUid() {
+        return this.auth.currentUser && this.auth.currentUser.uid
     }
 }
 
